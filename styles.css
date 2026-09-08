@@ -107,3 +107,19 @@ footer{background:var(--dark);color:white;padding:60px 0 28px}.footer-grid{displ
   .hero-bg-video{object-position:62% center}
   .hero-focus-panel{padding:24px;border-radius:22px}
 }
+
+/* =========================================================
+   PUBLICATIONS - 연도별 그룹 / 기타 연구성과
+   ========================================================= */
+.pub-year-group{margin-bottom:54px}
+.pub-year-heading{font-size:30px;letter-spacing:-.035em;margin:0 0 14px;padding-bottom:12px;border-bottom:2px solid var(--dark)}
+.pub-year-group .pubs{border-top:0}
+.pub-count{font-size:13px;color:var(--muted);font-weight:650;margin-left:10px}
+.pub-other-wrap{margin-top:84px;padding-top:54px;border-top:1px solid var(--line)}
+.pub-other-head{margin-bottom:34px}
+.pub-other-head h2{font-size:36px;letter-spacing:-.04em;margin:0 0 10px}
+.pub-other-head p{color:var(--muted);margin:0;max-width:720px}
+.pub-other-section{margin-top:40px}
+.pub-other-section h3{font-size:23px;margin:0 0 10px;letter-spacing:-.025em}
+.pub-note{padding:16px 18px;border:1px solid var(--line);border-radius:14px;background:#fbfcfe;color:var(--muted);font-size:13px;margin-bottom:34px}
+@media(max-width:560px){.pub-year-heading{font-size:26px}.pub-other-head h2{font-size:30px}}
