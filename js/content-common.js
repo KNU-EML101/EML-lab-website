@@ -1,32 +1,47 @@
 /* =========================================================
-   AEM LAB - 공통 정보
+   EML LAB - 공통 정보
    ---------------------------------------------------------
-   이 파일은 모든 페이지에서 공통으로 사용하는 정보입니다.
-   연구실 이름, 교수 정보, Footer, 연락처 등을 여기서 수정하세요.
+   연구실 공식 표기를 EML 기준으로 수정한 버전입니다.
+   - 헤더 좌측 상단에 업로드한 EML 로고를 표시합니다.
+   - shortName / siteTitle / labName을 모두 EML 기준으로 변경했습니다.
 
-   [사진 넣는 법]
-   1) images 폴더 안에 사진 파일을 넣습니다.
-      예: images/professor.jpg
-   2) photo: "images/professor.jpg" 처럼 경로를 입력합니다.
-   3) 파일명은 영문/숫자/하이픈(-) 사용을 권장합니다.
+   [교수 사진 넣는 법]
+   images/professor.jpg 파일을 넣고 아래 photo 경로를 유지하면 됩니다.
    ========================================================= */
 window.COMMON_CONTENT = {
-  siteTitle: "AEM Lab | Advanced Energy Materials Laboratory",
-  shortName: "AEM",
-  labName: "Advanced Energy Materials Laboratory",
+  siteTitle: "EML Lab | Energy Materials Laboratory",
+  shortName: "EML",
+  labName: "Energy Materials Laboratory",
+  logoPath: "images/eml-logo-wordmark.png",
+  logoAlt: "EML logo",
 
   professor: {
-    name: "Prof. [교수님 성함]",
-    affiliation: "Department of [학과명], [대학교명]",
-    quote: "We design functional interfaces and porous architectures to solve fundamental limitations in next-generation batteries.",
-    photo: "" // 예: "images/professor.jpg"
+    name: "Prof. Jin Joo (주진)",
+    affiliation: "Department of Applied Chemistry, Kyungpook National University",
+    quote: "Research in lithium-ion batteries, inorganic chemistry, and nanomaterials.",
+    photo: "images/professor.jpg"
   },
 
-  footerAffiliation: "[대학교명] [학과명]",
+  professorProfile: {
+    education: [
+      "Ph.D., Seoul National University (2005)",
+      "M.A., Seoul National University (2001)",
+      "B.A., Seoul National University (1999)"
+    ],
+    experience: [
+      "Professor, Kyungpook National University (2009–Present)",
+      "Postdoctoral Researcher, Los Alamos National Laboratory, USA (2006–2009)",
+      "Postdoctoral Researcher, Seoul National University (2005–2006)"
+    ]
+  },
+
+  footerAffiliation: "Kyungpook National University · College of Engineering · Department of Applied Chemistry",
+
   contact: {
-    room: "[건물명 / 연구실 호수]",
-    address: "[대학교 주소]",
-    email: "professor@university.ac.kr",
-    tel: "02-0000-0000"
+    room: "",
+    address: "80 Daehak-ro, Buk-gu, Daegu 41566, Republic of Korea",
+    email: "joojin@knu.ac.kr",
+    tel: "+82-53-950-5585",
+    fax: "+82-53-950-6594"
   }
 };
