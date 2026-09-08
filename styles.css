@@ -126,3 +126,36 @@ footer{background:var(--dark);color:white;padding:60px 0 28px}.footer-grid{displ
 @media(max-width:560px){.pi-profile{grid-template-columns:1fr}.recruitment-card{padding:26px}}
 
 @media(max-width:760px){.brand-sub{display:none}.brand-mark{height:30px}.brand-title{font-size:18px}}
+
+/* =========================================================
+   PUBLICATIONS - 연도별 그룹 / 기타 연구성과
+   ========================================================= */
+.pub-year-group{margin-bottom:54px}
+.pub-year-heading{font-size:30px;letter-spacing:-.035em;margin:0 0 14px;padding-bottom:12px;border-bottom:2px solid var(--dark)}
+.pub-year-group .pubs{border-top:0}
+.pub-count{font-size:13px;color:var(--muted);font-weight:650;margin-left:10px}
+.pub-other-wrap{margin-top:84px;padding-top:54px;border-top:1px solid var(--line)}
+.pub-other-head{margin-bottom:34px}
+.pub-other-head h2{font-size:36px;letter-spacing:-.04em;margin:0 0 10px}
+.pub-other-head p{color:var(--muted);margin:0;max-width:720px}
+.pub-other-section{margin-top:40px}
+.pub-other-section h3{font-size:23px;margin:0 0 10px;letter-spacing:-.025em}
+.pub-note{padding:16px 18px;border:1px solid var(--line);border-radius:14px;background:#fbfcfe;color:var(--muted);font-size:13px;margin-bottom:34px}
+@media(max-width:560px){.pub-year-heading{font-size:26px}.pub-other-head h2{font-size:30px}}
+
+
+/* =========================================================
+   CONTACT - Google Map
+   ---------------------------------------------------------
+   지도 검색 대상: 경북대학교 공대1호관
+   iframe 검색어를 바꾸려면 contact.html의 Google Maps URL을 수정하세요.
+   ========================================================= */
+.contact-map-section{margin-top:58px}
+.contact-map-head{margin-bottom:24px}
+.contact-map-head h2{font-size:36px;margin:0;letter-spacing:-.035em}
+.contact-map-head .eyebrow{margin-bottom:8px}
+.map-wrap{width:100%;height:460px;border:1px solid var(--line);border-radius:24px;overflow:hidden;background:#eef3f8;box-shadow:var(--shadow)}
+.map-wrap iframe{display:block;width:100%;height:100%;border:0}
+.map-link{display:inline-flex;margin-top:14px;font-size:14px;font-weight:750;color:var(--accent2)}
+.map-link:hover{text-decoration:underline}
+@media(max-width:700px){.map-wrap{height:360px}.contact-map-head h2{font-size:30px}}
