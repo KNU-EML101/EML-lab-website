@@ -1,23 +1,27 @@
 /* =========================================================
-   RESEARCH 페이지 내용 - research.html
+   RESEARCH 페이지 내용
    ---------------------------------------------------------
-   [연구 주제 추가 방법]
-   아래 한 덩어리를 research 배열 안에 복사해서 추가하세요.
-
-   {
-     code: "NEW AREA",
-     title: "새 연구 주제 제목",
-     description: "연구 내용을 설명합니다."
-   },
-
-   개수 제한은 없습니다. 추가한 만큼 카드가 자동 생성됩니다.
+   공개된 연구실/경북대학교 프로필에 근거해 수정했습니다.
+   특정 세부 프로젝트는 추정하지 않았습니다.
    ========================================================= */
 window.PAGE_CONTENT = {
   pageTitle: "Research",
-  pageDescription: "Functional materials and interfaces for next-generation energy storage.",
+  pageDescription: "Lithium-ion batteries, inorganic chemistry, and functional nanomaterials.",
   research: [
-    { code: "Li–S", title: "Lithium–Sulfur Batteries", description: "황의 높은 이론용량을 활용하면서 polysulfide shuttle, 낮은 전도성 및 반응 속도 문제를 해결하는 고성능 양극 소재를 개발합니다." },
-    { code: "POROUS", title: "Porous Carbon Hosts", description: "기공 크기, 기공 부피, 비표면적 및 연결성을 조절하여 황 담지와 전해액 침투, 물질전달을 최적화합니다." },
-    { code: "INTERFACE", title: "Functional Interfaces", description: "1차 알킬아민 등 기능성 분자를 이용해 LiPS와의 상호작용을 제어하고, 흡착과 redox chemistry의 상관관계를 연구합니다." }
+    {
+      code: "LIB",
+      title: "Lithium-Ion Battery Materials",
+      description: "리튬이온전지용 전극 소재, 특히 양극 소재의 합성과 성능 향상을 위한 소재 설계를 연구합니다."
+    },
+    {
+      code: "E-CHEM",
+      title: "Electrochemical Characterization",
+      description: "합성 소재의 충·방전 거동과 전기화학적 특성을 분석하여 구조와 성능 사이의 상관관계를 규명합니다."
+    },
+    {
+      code: "NANO",
+      title: "Inorganic & Nanomaterials",
+      description: "무기화학 및 나노소재 합성에 기반하여 에너지·광전자 응용이 가능한 기능성 나노구조체를 연구합니다."
+    }
   ]
 };
