@@ -60,8 +60,20 @@
             <p class="quote" id="professorQuote"></p>
             <h3 style="font-size:25px;margin:0 0 8px" id="professorName"></h3>
             <p class="muted" id="professorAffiliation"></p>
+            <div class="pi-profile" id="professorProfile"></div>
             <div class="stats" id="statsGrid"></div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="recruitment-section">
+      <div class="container">
+        <div class="recruitment-card">
+          <div class="eyebrow">Join Our Lab</div>
+          <h2 id="recruitmentTitle"></h2>
+          <p id="recruitmentDescription"></p>
+          <a class="btn btn-primary" id="recruitmentContact" href="mailto:joojin@knu.ac.kr"></a>
         </div>
       </div>
     </section>
@@ -88,7 +100,14 @@
       document.getElementById('professorQuote').textContent = c.professor.quote;
       document.getElementById('professorName').textContent = c.professor.name;
       document.getElementById('professorAffiliation').textContent = c.professor.affiliation;
+      const profile = c.professorProfile || {};
+      document.getElementById('professorProfile').innerHTML = `
+        <div><strong>Education</strong>${(profile.education||[]).map(x=>`<span>${esc(x)}</span>`).join('')}</div>
+        <div><strong>Experience</strong>${(profile.experience||[]).map(x=>`<span>${esc(x)}</span>`).join('')}</div>`;
       document.getElementById('statsGrid').innerHTML = d.stats.map(x => `<div class="stat"><strong>${esc(x.value)}</strong><span>${esc(x.label)}</span></div>`).join('');
+      document.getElementById('recruitmentTitle').textContent = d.recruitmentTitle || '';
+      document.getElementById('recruitmentDescription').textContent = d.recruitmentDescription || '';
+      document.getElementById('recruitmentContact').textContent = d.recruitmentContact || 'Contact';
 
       initHeroVideo();
     });
